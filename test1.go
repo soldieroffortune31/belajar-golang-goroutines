@@ -1,22 +1,22 @@
 package main
 
-import "fmt"
+// import "fmt"
 
-func main() {
+// func main() {
 
-	channel := make(chan int)
-	// defer close(channel)
+// 	channel := make(chan int)
+// 	// defer close(channel)
 
-	go SetDataChannel(channel)
+// 	go SetDataChannel(channel)
 
-	for i := 1; i <= 5; i++ {
-		fmt.Println(<-channel)
-	}
-}
+// 	for i := 1; i <= 5; i++ {
+// 		fmt.Println(<-channel)
+// 	}
+// }
 
-func SetDataChannel(channel chan int) {
-	for i := 1; i <= 5; i++ {
-		channel <- i
-	}
-	close(channel)
-}
+// func SetDataChannel(channel chan int) {
+// 	for i := 1; i <= 5; i++ {
+// 		channel <- i
+// 	}
+// 	close(channel)
+// }
